@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/hamburger_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="41dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hamburger_menu" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="35dp"
+        android:text="로그인"
+        android:textColor="#17191f"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/object"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/object" />
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/object"
+        app:layout_constraintLeft_toRightOf="@+id/object"
+        app:layout_constraintTop_toTopOf="@+id/object"
+        app:srcCompat="@drawable/circle" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="142dp"
+        android:layout_marginBottom="141dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="4sp"
+        android:text="T All케어 회원 로그인"
+        android:textColor="#17191f"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/customer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/object" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="283dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="413dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="6sp"
+        android:text="T All케어 휴대폰 보험에 가입하신 고객님을 위한
+보험 청구 및 휴대폰 관리에 필요한 24시간
+기술 전문가 상담 및 그 밖에 프리미엄 서비스를
+이용하기 위해 로그인이 필요합니다"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/input_mdn"
+        android:layout_width="234dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="293dp"
+        android:background="@drawable/input_shape_left"
+        android:bottomLeftRadius="50dp"
+        android:text="휴대폰 번호"
+        android:textAlignment="inherit"
+        android:textColor="#999999"
+        android:textSize="14dp"
+        android:topLeftRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/input_auth_num"
+        android:layout_width="234dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="454dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="228dp"
+        android:background="@drawable/input_shape_left"
+        android:text="인증번호"
+        android:textAlignment="inherit"
+        android:textColor="#999999"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_resend"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="259dp"
+        android:layout_marginTop="453dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="228dp"
+        android:background="@drawable/input_shape_right"
+        android:bottomRightRadius="50dp"
+        android:text="재전송"
+        android:textColor="#f48035"
+        android:textSize="14dp"
+        android:topRightRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_getAuth"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="259dp"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="293dp"
+        android:background="@drawable/input_shape_right"
+        android:bottomRightRadius="50dp"
+        android:text="인증번호 받기"
+        android:textColor="#f48035"
+        android:textSize="14dp"
+        android:topRightRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/btn_shape"
+        android:text="확인"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
